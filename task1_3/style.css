@@ -11,6 +11,7 @@ body,
 }
 
 .container {
+    min-width:440px;
     background-color: #eee;
 }
 
