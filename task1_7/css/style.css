@@ -145,7 +145,7 @@ nav #menu-list li a {
     background: url(../images/bg_02.png) no-repeat center center;
     background-size: 100% 100%;
     padding-top: 50px;
-    height: 300px;
+    /* height: 300px;*/
     text-align: center;
     color: #fff;
 }
@@ -400,8 +400,7 @@ nav #menu-list li a {
 
 .section-six .header p {
     display: inline-block;
-    width: 30%;
-    min-width: 600px;
+    width: 40%;
 }
 
 .section-six .left {
@@ -497,7 +496,7 @@ footer p {
     margin: 10px auto;
     font-size: 10px;
     line-height: 25px;
-    width: 465px;
+    width: 60%;
 }
 
 footer input {
@@ -546,10 +545,11 @@ footer .to-top {
 }
 
 @media screen and (max-width: 780px) {
-    .wrapper{
-    min-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+    .wrapper {
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+        overflow: hidden;
     }
     nav #menu {
         display: block;
@@ -559,6 +559,23 @@ footer .to-top {
     }
     nav ul {
         display: none;
+    }
+    .banner .intro {
+        text-align: center;
+        padding: 200px 5px;
+    }
+    .banner .intro h2 {
+        font-size: 50px;
+    }
+    .banner .intro p {
+        width: 100%;
+        padding: 5px;
+        line-height: 30px;
+    }
+    .banner .intro button {
+        border: none;
+        outline: none;
+        padding: 16px;
     }
     .section-two li {
         margin: 5px auto;
@@ -595,6 +612,12 @@ footer .to-top {
         width: 100%;
     }
     .section-six .right {
+        width: 100%;
+    }
+    .section-six .right input {
+        width: 30%;
+    }
+    .section-six table .submit {
         width: 100%;
     }
 }
