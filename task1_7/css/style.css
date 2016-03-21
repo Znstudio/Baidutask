@@ -12,7 +12,7 @@ body {
 }
 
 .wrapper {
-    min-width: 640px;
+    min-width: 1280px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -23,6 +23,7 @@ nav {
     background: #fff;
     line-height: 55px;
 }
+
 nav #menu {
     display: none;
 }
@@ -235,7 +236,6 @@ nav #menu-list li a {
     font-size: 12px;
 }
 
-
 .section-four:after {
     clear: both;
     content: "";
@@ -245,7 +245,7 @@ nav #menu-list li a {
 .section-four .left {
     float: left;
     width: 66%;
-   height: 550px;
+    height: 550px;
     background: url(../images/img5.gif) no-repeat center center;
     background-size: 100% 100%;
 }
@@ -545,13 +545,19 @@ footer .to-top {
     cursor: pointer;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 780px) {
+    .wrapper{
+    min-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    }
     nav #menu {
         display: block;
         float: right;
+        margin-right: 5px;
         color: #000;
     }
-     nav ul {
+    nav ul {
         display: none;
     }
     .section-two li {
@@ -569,26 +575,26 @@ footer .to-top {
         width: 100%;
     }
     .section-four .right {
-    position: relative;
-    height: inherit;
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
-    text-align: center;
+        position: relative;
+        height: inherit;
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: center;
     }
-    .section-five li{
+    .section-five li {
         width: 100%;
     }
     .section-five li:last-child {
-    width: 100%;
-    background: url(../images/img6.gif) no-repeat center center;
-    background-size: 100%;
-}
-.section-six .left{
-      margin-left: 0;
-    width: 100%;
-}
-.section-six .right{
-    width: 100%;
-}
+        width: 100%;
+        background: url(../images/img6.gif) no-repeat center center;
+        background-size: 100%;
+    }
+    .section-six .left {
+        margin-left: 0;
+        width: 100%;
+    }
+    .section-six .right {
+        width: 100%;
+    }
 }
