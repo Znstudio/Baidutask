@@ -147,6 +147,7 @@ nav #menu-list li a {
     padding-top: 50px;
     /* height: 300px;*/
     text-align: center;
+    padding-bottom: 150px;
     color: #fff;
 }
 
@@ -580,6 +581,9 @@ footer .to-top {
     .section-two li {
         margin: 5px auto;
         width: 100%;
+    }
+    .section-two {
+        padding-bottom: 50px;
     }
     .show li {
         width: 100%;
