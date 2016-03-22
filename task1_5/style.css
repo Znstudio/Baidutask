@@ -1,0 +1,113 @@
+section {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+div#body {
+    margin: 0 auto;
+    float: left;
+    width: 65%;
+    min-width: 300px;
+}
+aside {
+    margin: 0 auto;
+    float: right;
+    width: 300px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family:"Microsoft Yahei";
+}
+div.header {
+    background-color: #55a532;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    width: 100%;
+}
+img.mainPic {
+    width: 100%;
+
+}
+img#logo {
+    max-height: 60px;
+}
+div.header ul {
+    float: right;
+    display: inline-block;
+}
+ul.nav li {
+    padding: 0 20px;
+    float: left;
+}
+article#article1,
+article#article2,
+article#article3,
+article#photo,
+aside {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+}
+article#photo img {
+    width: 100%;
+}
+ul#photoGroup li {
+    list-style:none
+}
+div.thumbnail {
+    border:1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+table,td {
+    width: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+}
+thead {
+    background-color: black;
+    color: white;
+}
+tfoot {
+    background-color: #999999;
+}
+form {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 14px;
+}
+form input,
+form select{
+    line-height:20px;
+    margin: 5px;
+}
+label {
+    float: left;
+    width: 120px;
+}
+textarea {
+    width:173px;
+    height: 100px;
+    margin: 5px;
+}
+button.formSubmit {
+    width: 100%;
+    background-color: #007edf;
+    height: 40px;
+}
+form p {
+    color: lightgray;
+}
+
