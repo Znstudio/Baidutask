@@ -56,7 +56,6 @@ var pageState = {
  */
 function renderChart() {
     var chartDiv = document.getElementById("aqi-chart-wrap");
-    /*chartDiv.style.position = "relative";*/
     chartDiv.style.left = "0px";
     chartDiv.style.width = "1500px";
     chartDiv.style.height = "620px";
@@ -77,8 +76,6 @@ function renderChart() {
             sub.style.marginRight = "5px";
             var dis = 620 - chartData[pageState.nowSelectCity].day[p];
             sub.style.marginTop = dis;
-/*            var totest = 0 - chartData[pageState.nowSelectCity].day[p];
-            sub.style.marginBottom = totest;*/
             if(chartData[pageState.nowSelectCity].day[p] <= 50){
                 sub.style.backgroundColor = "green";
             } else if(chartData[pageState.nowSelectCity].day[p] <= 100) {
@@ -251,7 +248,6 @@ function initAqiChartData() {
         //处理每周数据
         var weekCount1 = getWeekCount(2016,01);
         for(var k=0;k<weekCount1;k++){
-            var everyWeekData = 0;
             var weekSum = 0;
             var from = split_date[k][0];
             var to = split_date[k][1];
