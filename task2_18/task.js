@@ -1,27 +1,26 @@
 var fifo = [];
 
-Array.prototype.del=function(index){
+Array.prototype.del = function(index){
     if(isNaN(index)||index>=this.length){
         return false;
     }
-    for(var i=0,n=0;i<this.length;i++){
-        if(this[i]!=this[index]){
-            this[n++]=this[i];
-        }
+    for(var i= 0,n=0;i<index;i++){
+        this[n++] = this[i];
+    }
+    for(var k=index+1;k<this.length;k++){
+        this[n++] = this[k];
     }
     this.length -= 1;
 }
 
 function leftIn(){
     var inputVal = document.getElementById("number").value;
-    console.log(inputVal);
     fifo.unshift(inputVal);
     renderDiv();
 }
 
 function rightIn(){
     var inputVal = document.getElementById("number").value;
-    console.log(inputVal);
     fifo.push(inputVal);
     renderDiv();
 }
